@@ -1,3 +1,8 @@
-* {
-  color: blue;
+@import "banner";
+@import "variables";
+
+body {
+  margin: 0;
+  background-color: $base-color-one;
+  font-family: "Roboto Condensed", sans-serif;
 }

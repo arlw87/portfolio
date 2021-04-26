@@ -1,0 +1,61 @@
+@import "variables";
+
+$nav-height: 10%;
+
+#banner {
+  height: 100vh;
+  min-height: 300px;
+  background: linear-gradient(rgba(23, 35, 46, 0.71), rgba(23, 35, 46, 0.71)),
+    url(../static/abstract.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100% - $nav-height;
+
+  #name {
+    color: $accent-color;
+    font-size: 51px;
+    font-weight: 300;
+    margin: 0;
+    margin: 18% 0 0 0;
+  }
+
+  #job {
+    font-weight: 300;
+    color: $background-color-text;
+    font-size: 4rem;
+    text-align: center;
+    letter-spacing: -1px;
+    margin: 2% 0 0 0;
+    font-family: $font-family;
+  }
+
+  button {
+    background-color: $accent-color;
+    color: $base-color-one;
+    border: none;
+    font-size: 31px;
+    letter-spacing: -1px;
+    padding: 10px 15px;
+    font-family: $font-family;
+    margin: 10% 0 0 0;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: $nav-height;
+}
+
+.menu-img {
+  width: auto;
+  margin: 10px;
+}
