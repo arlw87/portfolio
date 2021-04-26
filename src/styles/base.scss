@@ -1,8 +1,16 @@
-@import "banner";
 @import "variables";
+@import "banner";
+@import "aboutme";
 
 body {
   margin: 0;
   background-color: $base-color-one;
   font-family: "Roboto Condensed", sans-serif;
+}
+
+.section-text {
+  color: $accent-color;
+  font-size: 51px;
+  font-weight: 300;
+  text-align: center;
 }
