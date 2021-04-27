@@ -29,7 +29,7 @@ $nav-height: 10%;
     text-align: center;
     letter-spacing: -1px;
     margin: 2% 0 0 0;
-    font-family: $font-family;
+    font-family: $font-family-headings;
   }
 
   button {
@@ -39,7 +39,7 @@ $nav-height: 10%;
     font-size: 31px;
     letter-spacing: -1px;
     padding: 10px 15px;
-    font-family: $font-family;
+    font-family: $font-family-headings;
     margin: 10% 0 0 0;
   }
 }

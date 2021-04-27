@@ -1,8 +1,69 @@
-section {
+#about-me {
   background-color: $base-color-two;
   margin: 0;
+  display: grid;
+  grid-template-rows: 2% 10% 20% 5% 10% 2% 1fr 30px;
+  grid-template-columns: auto;
+  min-height: 100vh;
+
+  //   grid-template-areas:
+  //     "title"
+  //     "pic"
+  //     "pic"
+  //     "text"
+  //     "text"
+  //     "text";
 
   h1 {
     margin: 0;
+    grid-area: title;
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .text-container {
+    background-color: $background-color-text;
+    font-family: $font-family-detail;
+    width: 90%;
+    grid-area: text;
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    z-index: 1;
+    max-width: 350px;
+
+    p {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  img {
+    width: auto;
+    max-height: 250px;
+    grid-area: pic;
+    place-self: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    z-index: 2;
+  }
+
+  #text-padding {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    background-color: $background-color-text;
+    width: 90%;
+    justify-self: center;
+    max-width: 350px;
   }
 }
